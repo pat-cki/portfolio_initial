@@ -18,3 +18,18 @@ body {
     max-width: 1200px;
     padding: 3em;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+} 
+
+.project {
+    min-width: 100%;
+    background-color: var(--headline-color);
+    padding: 3em;
+    margin-top: 1em;
+}
+
+
+
