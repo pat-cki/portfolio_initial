@@ -1,39 +1,78 @@
 :root {
-    --main-bg-color: #ffddcc;
-    --headline-color: #33339a;
-  }
-
-ul.nav {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 5em;
-}
-
-ul.nav li {
-    display: inline-block;
-    padding-left: 3em;
-}
-
-h1, h2 {
-    color: var(--headline-color);
-    font-family: Oswald, sans-serif;
-    margin-bottom: 0.2em;
+    --main-bg-color: #f7f7f7;
+    --headline-color: #740499;
+    --footer-background: #c8bdcb;
+    --transition: 0.2s all ease-in-out;
 }
 
 body {
     background-color: var(--main-bg-color);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3em 3em 0 3em;
+
     display: flex;
     flex-direction: column;
-    margin: auto;
-    max-width: 1200px;
-    padding: 3em;
+}
+
+ul.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.nav li {
+    display: inline-block;
+    padding: 0 2rem;
+    transition: var(--transition);
+    font-size: 1.2em;
+}
+
+
+.nav:hover li:not(:hover) {
+    opacity: 0.2;
+}
+
+.nav:hover li:hover {
+    color: var(--headline-color);
+    font-weight: 900;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--headline-color);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: .2em;
+    margin-top: 2em;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+header,
+section {
+    margin-bottom: 5em;
+}
+
+
+.intro-paragraph {
+    padding-bottom: 1em;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-} 
+}
 
 .project {
     min-width: 100%;
@@ -42,14 +81,33 @@ body {
     margin-top: 1em;
 }
 
+footer {
+    margin-top: 3em;
+    background-color: var(--footer-background);
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    transition: var(--transition);
+}
+
+
+footer:hover {
+    opacity: 1;
+}
+
+footer p {
+    margin: 2em;
+    color: var(--headline-color);
+    font-weight: 800;
+}
 
 @media only screen and (min-width: 768px) {
     .projects {
-      flex-direction: row;
-      flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .project {
         max-width: 45%;
     }
-  }
+}
