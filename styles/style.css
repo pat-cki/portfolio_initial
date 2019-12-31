@@ -20,18 +20,26 @@ body {
     flex-direction: column;
 }
 
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
 ul.nav {
     display: flex;
-    justify-content: flex-end;
 }
 
 ul.nav li {
     display: inline-block;
-    padding: 0 2rem;
+    padding: 0 2.5rem 0 0;
     transition: var(--transition);
-    font-size: 1.2em;
+    font-size: 1em;
 }
-
 
 .nav:hover li:not(:hover) {
     opacity: 0.2;
@@ -40,6 +48,11 @@ ul.nav li {
 .nav:hover li:hover {
     color: var(--headline-color);
     font-weight: 900;
+}
+
+ul.nav li a {
+    color: var(--headline-color);
+    text-decoration: none;
 }
 
 h1,
@@ -57,7 +70,8 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    line-height: 1.6em;
     font-weight: 600;
 }
 
@@ -66,13 +80,13 @@ h3 {
 }
 
 header,
-section {
+section.main {
     margin-bottom: 5em;
 }
 
-
 .intro-paragraph {
     padding-bottom: 1em;
+    line-height: 2em;
 }
 
 .projects {
@@ -87,7 +101,7 @@ section {
 
 .project {
     border: 1px solid var(--headline-color);
-    padding: 5em;
+    padding: 2.5em;
     margin-top: 1em;
     transition: var(--transition);
     background-color: white;
@@ -96,6 +110,35 @@ section {
 .project:hover {
     box-shadow: 10px 10px 0 0 var(--shadow-color);
 }
+
+h4.project-title {
+    font-size: 1.4em;
+}
+
+.project-description {
+    margin-top: 1em;
+    line-height: 2em;
+    font-size: .9em;
+
+}
+
+.project-links {
+    margin-top: 1.2em;
+}
+
+.links-list {
+    display: flex;
+    list-style: none;
+}
+
+.project-link a {
+    font-weight: 800;
+    color: var(--headline-color);
+    text-decoration: none;
+}
+
+
+
 
 ul.links {
     display: flex;
@@ -106,7 +149,6 @@ ul.links li {
     margin-top: 1.2em;
     font-size: 1.2em;
     padding: 0;
-
 }
 
 ul.links li a {
@@ -122,8 +164,6 @@ ul.links li a {
     font-weight: 900;
 }
 
-
-
 footer {
     margin-top: 3em;
     background-color: var(--footer-background);
@@ -132,7 +172,6 @@ footer {
     opacity: 0.5;
     transition: var(--transition);
 }
-
 
 footer:hover {
     opacity: 1;
@@ -145,6 +184,22 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
+
+    ul.nav li {
+        display: inline-block;
+        padding: 0 2rem;
+        transition: var(--transition);
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    ul.nav {
+        justify-content: flex-end;
+    }
+
     .row {
         flex-direction: row;
     }
@@ -155,6 +210,5 @@ footer p {
 
     .row :first-child {
         margin-right: 1em;
-
     }
 }
