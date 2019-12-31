@@ -50,6 +50,11 @@ ul.nav li {
     font-weight: 900;
 }
 
+ul.nav li a {
+    color: var(--headline-color);
+    text-decoration: none;
+}
+
 h1,
 h2,
 h3 {

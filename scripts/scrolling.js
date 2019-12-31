@@ -1,9 +1,11 @@
 // SECTIONS VARIABLES
-const nav_aboutme = document.querySelector('.nav_aboutme'),
-    nav_journey = document.querySelector('.nav_journey'),
-    nav_fc = document.querySelector('.nav_fc'),
-    nav_contact = document.querySelector('.nav_contact');
+const navAbout = document.querySelector('.nav-aboutme');
+const navProjects = document.querySelector('.nav-projects');
+const navContact = document.querySelector('.nav-contact');
 
+console.log(navAbout);
+console.log(navProjects);
+console.log(navContact);
 
 // SCROLLING BETWEEN SECTIONS 
 
@@ -33,18 +35,14 @@ function smoothScroll(target, time) {
 }
 
 // EVENT LISTENERS
-nav_aboutme.addEventListener('click', function () {
-    smoothScroll('.aboutme_section', 600);
+navAbout.addEventListener('click', function () {
+    smoothScroll('.aboutme', 400);
 });
 
-nav_journey.addEventListener('click', function () {
-    smoothScroll('.journey_section', 600);
+navProjects.addEventListener('click', function () {
+    smoothScroll('.projects', 400);
 });
 
-nav_fc.addEventListener('click', function () {
-    smoothScroll('.fac_section', 600);
-});
-
-nav_contact.addEventListener('click', function () {
-    smoothScroll('.contact_section', 600);
+navContact.addEventListener('click', function () {
+    smoothScroll('.contact', 400);
 });
