@@ -8,7 +8,7 @@
 
 body {
     background-color: var(--main-bg-color);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -20,15 +20,11 @@ body {
     flex-direction: column;
 }
 
-
 .top-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
-
 
 ul.nav {
     display: flex;
@@ -47,7 +43,7 @@ ul.nav li {
 
 .nav:hover li:hover {
     color: var(--headline-color);
-    font-weight: 900;
+    font-weight: 700;
 }
 
 ul.nav li a {
@@ -59,12 +55,12 @@ h1,
 h2,
 h3 {
     color: var(--headline-color);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
     font-size: 3em;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: .2em;
     margin-top: 2em;
 }
@@ -72,7 +68,7 @@ h1 {
 h2 {
     font-size: 1.6em;
     line-height: 1.6em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3 {
@@ -83,7 +79,6 @@ header,
 section.main {
     margin-bottom: 3em;
 }
-
 
 .intro-paragraph {
     padding-bottom: 1em;
@@ -120,7 +115,6 @@ h4.project-title {
     margin-top: 1em;
     line-height: 2em;
     font-size: .9em;
-
 }
 
 .project-links {
@@ -133,15 +127,12 @@ h4.project-title {
 }
 
 .project-link a {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--headline-color);
     text-decoration: none;
     padding-right: 1em;
     font-size: 1.1em;
 }
-
-
-
 
 ul.links {
     display: flex;
@@ -164,7 +155,7 @@ ul.links li a {
 
 .links:hover li:hover {
     color: var(--headline-color);
-    font-weight: 900;
+    font-weight: 700;
 }
 
 footer {
@@ -183,12 +174,10 @@ footer:hover {
 footer p {
     margin: 2em;
     color: var(--headline-color);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
-
-
     .container {
         padding: 3em 3em 0 3em;
     }
@@ -213,11 +202,9 @@ footer p {
         margin-bottom: 3em;
     }
 
-
     header {
         margin-top: 6em;
     }
-
 
     .row {
         flex-direction: row;
@@ -234,6 +221,4 @@ footer p {
     .project {
         padding: 3em;
     }
-
-
 }
